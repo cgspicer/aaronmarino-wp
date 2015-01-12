@@ -11,7 +11,7 @@
 * http://aerotwist.com/blog/on-translate3d-and-layer-creation-hacks/
 **/
 .null-transform {
-  @include translate3d( 0, 0, 0 ); 
+  @include translate3d( 0, 0, 0 );
 }
 
 /**
@@ -55,6 +55,7 @@
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+  color: rgba(0, 0, 0, 0);
 }
 
 /**
