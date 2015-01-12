@@ -9,6 +9,7 @@ var uglify = require('gulp-uglify');
 var imageResize = require('gulp-image-resize');
 var compass = require('gulp-compass');
 var cache = require('gulp-cache');
+var webserver = require('gulp-webserver');
 
 gulp.task('compass', function() {
   gulp.src('./scss/*.scss')
@@ -26,13 +27,19 @@ gulp.task('compass', function() {
 gulp.task('watch', function() {
   gulp.watch('scss/*.scss',['compass']);
   livereload.listen();
-  gulp.watch('www/**').on('change', livereload.changed);
+  gulp.watch('wp/**').on('change', livereload.changed);
 });
 
 gulp.task('imagemin', function() {
   return gulp.src('wp/wp-content/themes/aaronmarino/images/**/*')
     .pipe(cache(imagemin({ optimizationLevel: 6, progressive: true, interlaced: true })))
     .pipe(gulp.dest('wp/wp-content/themes/aaronmarino/images'));
+});
+gulp.task('webserver', function() {
+  gulp.src('wp')
+    .pipe(webserver({
+      livereload: true
+    }));
 });
 
 
