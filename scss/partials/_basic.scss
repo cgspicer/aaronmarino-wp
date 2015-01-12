@@ -1,0 +1,58 @@
+// basic styles : http://codepen.io/cgspicer/pen/3f9748f0970a18b847bd67d4a14cc778/
+
+/** color variables **/
+$white: white;
+$black: black;
+$light-gray: rgb( 240, 240, 240 );
+$medium-gray: rgb( 150, 150, 150 );
+$gray: rgb( 65, 64, 66 );
+$gold: rgb( 242, 170, 29 );
+
+/** type settings **/
+body {
+  background-color: white;
+  @include font-size(1.5);
+  font-family: $font-family-open-sans;
+  color: black;
+}
+::selection {
+  background-color: $medium-gray;
+  color: $gray;
+}
+strong {
+  font-weight: bold;
+}
+small {
+  @include font-size(1);
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-montserrat;
+  font-weight: normal;
+  color: $gold;
+  text-transform: none;
+  margin: 1rem 0;
+}
+a {
+  color: $gold;
+  text-decoration: none;
+  &:hover {
+    color: $gold;
+    text-decoration: underline;
+  }
+}
+p {
+  margin: 1rem 0;
+}
+
+ul li:before {
+  border-color: $medium-gray;
+}
+
+// classed type styles
+h1.page-title {
+  text-transform: lowercase;
+  @include font-size(2.9);
+  span {
+    color: $gold;
+  }
+}
