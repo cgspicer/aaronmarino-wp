@@ -27,3 +27,4 @@ wp/wp-settings.php
 wp/wp-signup.php
 wp/wp-trackback.php
 wp/xmlrpc.php
+wp/.htaccess
