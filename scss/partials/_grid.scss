@@ -167,3 +167,12 @@ $gutter: 20px;
     }
   }
 }
+
+@media #{$small-only} {
+  .grid-row > .col {
+    padding: 0 $gutter;
+    &:last-of-type {
+      padding-right: 0 $gutter;
+    }
+  }
+}
