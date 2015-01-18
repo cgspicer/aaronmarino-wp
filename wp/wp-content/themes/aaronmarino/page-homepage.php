@@ -3,6 +3,9 @@
  * @package WordPress
  * @subpackage Aaron Marino v2
  */
+/**
+* Template Name: Homepage
+**/
  get_header(); ?>
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -114,6 +117,7 @@
     </div>
     <?php } ?>
 
+    <?php if ( get_field('aarons_quote')  ) { ?>
     <div class="light-gray inverted">
       <div class="center-wrapper aaron-quote">
         <div class="grid-row no-margin">
@@ -124,6 +128,7 @@
         </div>
       </div>
     </div>
+    <?php } ?>
 
   </div>
 
