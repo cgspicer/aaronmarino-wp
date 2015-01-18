@@ -9,7 +9,6 @@ $(document).ready( function(){
       var link = $(this).children('a')[0];
       TweenMax.set( $submenu, { 'height': 0, 'opacity' : 0 } );
       $submenu.on( 'mouseover', function(e){
-        console.log( 'wtf' );
         $submenu.addClass('active');
         $(link).unbind('mouseleave');
         $submenu.one( 'mouseleave', function(e){
