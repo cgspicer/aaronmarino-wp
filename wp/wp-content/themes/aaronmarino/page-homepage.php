@@ -114,6 +114,17 @@
     </div>
     <?php } ?>
 
+    <div class="light-gray inverted">
+      <div class="center-wrapper aaron-quote">
+        <div class="grid-row no-margin">
+          <div class="col small-col-12">
+            <p class="quote aligncenter"><?php echo get_field('aarons_quote'); ?></p>
+            <p class="citation aligncenter">&dash; Aaron Marino</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
 	<?php endwhile; ?>
