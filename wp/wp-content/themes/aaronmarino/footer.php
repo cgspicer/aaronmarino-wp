@@ -6,7 +6,7 @@
  */
 ?>
 		<footer id="footer" class="source-org vcard copyright" role="contentinfo">
-			<small>&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?></small>
+			<small>Copyright &copy;2015 Aaron Marino. All rights reserved.</small>
 		</footer>
 
 	</div>
