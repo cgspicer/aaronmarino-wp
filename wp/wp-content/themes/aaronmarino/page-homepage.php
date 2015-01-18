@@ -130,6 +130,44 @@
     </div>
     <?php } ?>
 
+    <div class="center-wrapper">
+      <div class="grid-row">
+      <?php
+      if( have_rows('quick_links') ) {
+        $medColClass = 12 / count( get_field('quick_links') );
+        while ( have_rows('quick_links') ) : the_row();
+        ?>
+        <div class="col small-col-12 medium-col-<?php echo $medColClass; ?>">
+          <div class="quick-link-cta rounded-corners light-border">
+            <div class="grid-row">
+              <div class="col small-col-12">
+                <img class="full image" src="<?php echo the_sub_field('image'); ?>" alt="<?php echo the_sub_field('title_text'); ?>" />
+              </div>
+            </div>
+            <div class="grid-row">
+              <div class="col small-col-12">
+                <h5 class="title"><?php echo the_sub_field('title_text'); ?></h5>
+              </div>
+            </div>
+            <div class="grid-row">
+              <div class="col small-col-12">
+                <p class="promo-copy"><?php echo the_sub_field('promo_copy'); ?></p>
+              </div>
+            </div>
+            <div class="grid-row">
+              <div class="col small-col-12">
+                <a class="button gray inverted rounded-corners" href="<?php echo the_sub_field('link'); ?>" <?php if ( the_sub_field('target_blank') ) { ?> target="_blank" <?php } ?>>Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      <?php
+        endwhile;
+      }
+      ?>
+      </div>
+    </div>
+
   </div>
 
 	<?php endwhile; ?>
