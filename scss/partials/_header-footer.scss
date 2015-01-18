@@ -61,3 +61,20 @@ footer#footer {
   width: 100%;
   text-align: center;
 }
+
+@media #{$small-only} {
+  header .site-logo {
+    display: block;
+    float: none;
+  }
+  header #nav {
+    display: block;
+    float: none;
+    margin: 0;
+    ul.menu li, ul.sub-menu li {
+      display: block;
+      border-right: none;
+      border-bottom: 1px solid gray;
+    }
+  }
+}

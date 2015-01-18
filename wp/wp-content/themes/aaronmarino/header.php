@@ -129,7 +129,7 @@
 	<!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
 	<div>
 
-  <div class="grid-row gray inverted">
+  <div class="grid-row gray inverted no-margin">
     <div class="center-wrapper">
       <div class="grid-row">
         <div class="col small-col-12">
