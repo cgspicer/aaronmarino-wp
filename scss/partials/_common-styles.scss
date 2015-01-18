@@ -1,1 +1,20 @@
 // commonly used styles
+
+.aligncenter {
+  text-align: center;
+}
+.alignleft {
+  text-align: left;
+}
+.alignright {
+  text-align: right;
+}
+.rounded-corners {
+  border-radius: 4px;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 20px;
+  text-align: center;
+}
