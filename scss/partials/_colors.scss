@@ -43,12 +43,12 @@ $gold: rgb( 242, 170, 29 );
   color: $light-gray;
   &.inverted {
     background: $light-gray;
-    color: $gray;
+    color: $black;
   }
 }
 .gold {
   color: $gold;
-  &.solid-bg {
+  &.inverted {
     background: $gold;
     color: $gray;
   }
