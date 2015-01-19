@@ -6,6 +6,16 @@
  */
 ?>
 		<footer id="footer" class="source-org vcard copyright" role="contentinfo">
+  		<div class="center-wrapper">
+    		<div class="grid-row no-margin">
+      		<div class="col small-col-12">
+        		<a class="social-link facebook" href="<?php the_field('facebook', 'option'); ?>" target="_blank" >Facebook</a>
+        		<a class="social-link twitter" href="<?php the_field('twitter', 'option'); ?>" target="_blank" >Twitter</a>
+        		<a class="social-link linkedin" href="<?php the_field('linkedin', 'option'); ?>" target="_blank" >LinkedIn</a>
+        		<a class="social-link youtube" href="<?php the_field('youtube', 'option'); ?>" target="_blank" >YouTube</a>
+      		</div>
+    		</div>
+  		</div>
 			<small>Copyright &copy;2015 Aaron Marino. All rights reserved.</small>
 		</footer>
 
