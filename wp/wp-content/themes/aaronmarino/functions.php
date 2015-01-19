@@ -1,6 +1,19 @@
 <?php
 // Aaron Marino v2 functions file
 
+// shortcodes
+require_once(get_stylesheet_directory().'/shortcodes/testimonial-block.php');
+
+// setting up an ACF options page
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page(array(
+  	'page_title' 	=> 'Social Media Settings',
+  	'menu_title'	=> 'Social Media Settings',
+  	'menu_slug' 	=> 'social-media-settings',
+  	'position'    => '2.5'
+  ));
+}
+
 function custom_script() {
     wp_enqueue_script(
         'script', // name your script so that you can attach other scripts and de-register, etc.

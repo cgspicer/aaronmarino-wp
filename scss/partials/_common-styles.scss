@@ -24,5 +24,24 @@
 }
 
 .testimonial-block {
-
+  padding: 3rem 0 2rem;
+  background-image: url('../images/testimonial-block-bkg.png');
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: 325px 699px;
+  .title h2 {
+    @include font-size( 3.2 );
+    @include line-height( 5 );
+    color: $light-gray;
+  }
+  .quote {
+    padding: 2rem 0;
+    @include font-size( 1.7 );
+    @include line-height( 3 );
+  }
+  .citation {
+    @include font-size( 2.3 );
+    @include line-height( 3.3 );
+    color: $gold;
+  }
 }
