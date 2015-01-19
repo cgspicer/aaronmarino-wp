@@ -45,3 +45,30 @@
     color: $gold;
   }
 }
+
+.generic-page {
+  .the-title {
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $medium-gray;
+    margin-bottom: 1.5rem;
+    h1 {
+      @include font-size( 2.9 );
+      @include line-height( 2 );
+      color: $black;
+      text-transform: lowercase;
+    }
+  }
+  .the-content {
+
+  }
+}
+
+.bottom-blurb {
+  @include font-size( 2.5 );
+  @include line-height( 4 );
+  color: $medium-gray;
+  margin: 4rem 0;
+  font-weight: 300;
+  text-align: center;
+}
