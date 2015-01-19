@@ -49,7 +49,6 @@
 .generic-page {
   .the-title {
     padding-top: 4rem;
-    padding-bottom: 1rem;
     border-bottom: 1px solid $medium-gray;
     margin-bottom: 1.5rem;
     h1 {
@@ -60,7 +59,18 @@
     }
   }
   .the-content {
-
+    @include line-height( 2.5 );
+  }
+  &.my-story-page {
+    .the-title {
+      margin-bottom: 0;
+    }
+    .the-content.first-section {
+      margin-top: 1.5rem;
+    }
+    .the-content.second-section {
+      margin-bottom: 4rem;
+    }
   }
 }
 
