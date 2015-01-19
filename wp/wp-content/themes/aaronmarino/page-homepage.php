@@ -168,6 +168,8 @@
       </div>
     </div>
 
+    <?php echo do_shortcode( '[testimonialblock]' ); ?>
+
   </div>
 
 	<?php endwhile; ?>
