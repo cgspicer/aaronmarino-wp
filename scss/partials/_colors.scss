@@ -14,42 +14,42 @@ $gold: rgb( 242, 170, 29 );
 .black {
   color: $black;
   &.inverted {
-    background: $black;
+    background-color: $black;
     color: $white;
 	}
 }
 .white {
   color: $white;
   &.inverted {
-    background: $white;
+    background-color: $white;
     color: $white;
 	}
 }
 .gray {
   color: $gray;
   &.inverted {
-    background: $gray;
+    background-color: $gray;
     color: $white;
   }
 }
 .medium-gray {
   color: $medium-gray;
   &.inverted {
-    background: $medium-gray;
+    background-color: $medium-gray;
     color: $black;
   }
 }
 .light-gray {
   color: $light-gray;
   &.inverted {
-    background: $light-gray;
+    background-color: $light-gray;
     color: $black;
   }
 }
 .gold {
   color: $gold;
   &.inverted {
-    background: $gold;
+    background-color: $gold;
     color: $gray;
   }
 }
