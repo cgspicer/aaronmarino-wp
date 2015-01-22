@@ -1,0 +1,53 @@
+/** Media Page styles **/
+.media-page .featured-articles-title {
+  text-align: center;
+  background-color: $gold;
+  h2 {
+    @include font-size( 2 );
+    @include line-height( 4 );
+    color: $white;
+    margin: 0;
+  }
+}
+.media-page .featured-articles {
+  padding: 2rem;
+  .featured-article {
+    border-bottom: 1px solid $black;
+    margin-bottom: 1.5rem;
+    .media-title a, .media-title h4 {
+      @include font-size( 1.8 );
+      @include  line-height( 2.2 );
+      color: $gray;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.media-page .in-the-news {
+
+  .title {
+    text-align: center;
+    background-color: $gray;
+    h2 {
+      @include font-size( 2 );
+      @include line-height( 4 );
+      color: $white;
+      margin: 0;
+    }
+  }
+  .grid-row {
+    .media-title {
+      a {
+
+      }
+      h5 {
+        color: $gray;
+      }
+    }
+    &:nth-child(odd) {
+      background-color: $light-gray;
+    }
+  }
+}
