@@ -55,7 +55,7 @@ get_header(); ?>
             ?>
           </div>
           <div class="grid-row">
-            <div class="col small-col-6">
+            <div class="col small-col-12 medium-col-6">
               <a href="<?php echo get_field('dvd_shop_url'); ?>" class="call-to-action dvd gray button inverted rounded-corners">
                 <h3>DVD Set</h3>
                 <h5>BUY NOW</h5>
@@ -64,7 +64,7 @@ get_header(); ?>
               </a>
               <p style="text-align: center;">DVDs are shipped within 24 hours of order placement.</p>
             </div>
-            <div class="col small-col-6">
+            <div class="col small-col-12 medum-col-6">
               <a href="<?php echo get_field('download_shop_url'); ?>" class="call-to-action download gold button inverted rounded-corners">
                 <h3>Download</h3>
                 <h5>BUY NOW</h5>

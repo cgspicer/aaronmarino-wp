@@ -97,12 +97,18 @@
     @include line-height( 1 );
     color: $medium-gray;
     font-family: $font-family-open-sans;
+    @media #{$small-only} {
+      @include font-size( 2.6 );
+    }
   }
   h5 {
     @include font-size( 3.1 );
     @include line-height( 1.5 );
     color: $white;
     font-family: $font-family-open-sans;
+    @media #{$small-only} {
+      @include font-size( 1.8 );
+    }
   }
   h6 {
     @include font-size( 1.2 );
@@ -122,6 +128,12 @@
     font-family: $font-family-open-sans;
     sup {
       @include font-size( 2.5 );
+    }
+    @media #{$small-only} {
+      @include font-size( 2.5 );
+      sup {
+        @include font-size( 1.9 );
+      }
     }
   }
   &.dvd {
