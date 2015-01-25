@@ -17,18 +17,27 @@ $gold: rgb( 242, 170, 29 );
     background-color: $black;
     color: $white;
 	}
+  h1, h2, h3, h4, h5, h6 {
+    color: $white;
+  }
 }
 .white {
   color: $white;
   &.inverted {
     background-color: $white;
-    color: $white;
+    color: $gray;
 	}
+  h1, h2, h3, h4, h5, h6 {
+    color: $gray;
+  }
 }
 .gray {
   color: $gray;
   &.inverted {
     background-color: $gray;
+    color: $white;
+  }
+  h1, h2, h3, h4, h5, h6 {
     color: $white;
   }
 }
@@ -38,6 +47,9 @@ $gold: rgb( 242, 170, 29 );
     background-color: $medium-gray;
     color: $black;
   }
+  h1, h2, h3, h4, h5, h6 {
+    color: $black;
+  }
 }
 .light-gray {
   color: $light-gray;
@@ -45,11 +57,17 @@ $gold: rgb( 242, 170, 29 );
     background-color: $light-gray;
     color: $black;
   }
+  h1, h2, h3, h4, h5, h6 {
+    color: $black;
+  }
 }
 .gold {
   color: $gold;
   &.inverted {
     background-color: $gold;
+    color: $gray;
+  }
+  h1, h2, h3, h4, h5, h6 {
     color: $gray;
   }
 }

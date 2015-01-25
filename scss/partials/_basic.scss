@@ -26,6 +26,9 @@ a {
 }
 p {
   margin: 1rem 0;
+  &:empty {
+    margin: 0;
+  }
 }
 
 ul li:before {
