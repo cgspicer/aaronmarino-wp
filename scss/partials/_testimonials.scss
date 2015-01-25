@@ -1,0 +1,57 @@
+// testimonials page styles
+.testimonials-page {
+  .top-copy {
+    @include font-size( 1.9 );
+    @include line-height( 2.7 );
+    color: $medium-gray;
+  }
+  .full-quote {
+    .quote {
+
+    }
+    .citation {
+      @include font-size( 1.8 );
+      @include line-height( 3 );
+      font-weight: bold;
+      font-style: italic;
+    }
+  }
+  .excerpt p {
+    padding: 4rem;
+    @include font-size( 2.6 );
+    @include line-height( 3.3 );
+    color: $gray;
+    font-family: $font-family-montserrat;
+    &:before {
+
+    }
+  }
+  .excerpt {
+    position: relative;
+    margin-bottom: 2rem;
+    &:before {
+      display: block;
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      content: '';
+      width: 39px;
+      height: 32px;
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAgCAYAAACRpmGNAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAexJREFUeNpi/P//P8NgBUwMgxiMOm7UcfQGLKRq+HxznTnDjxeqjO/Ou4P4/3lVz/CalE0kVv+ne7s0GD/fMYHpBwEex9mx2NQyElOUfHp0VIzp7oJexrcXbKFC8kjSD7lDTisQMuPLibo6xifbk7Dp/2c1R41XSv8XySEHMpQZYqg8ztB8dpENm+FguauLvJiuT57GiOkoBrhDP981ZGDQP0lSmvuyP3UxIwGHIQzH4rAzXfkgh0H14zbj8x0LktLc54vTYpgg0YjL0If/+ZQvMfCpnfnPKX4fW9pifrC6EJ9+Bk7Rp/+FTXYy8KqcICnNfV1j+gCHwQ//Cxsc/q+ek4wrKsH6t3odZfj+2gqXp/5p5KbwyVm/Ijm3gkMNV2jJeM7jsWhqIpQjmb+/lsblMB63FX5kl3OMLw+FYQ01YDQQchjY0FdHsOtn4fpCrMNwO+7TXT1s4v8UIlqJK8xumWAT/i9hv4qiGgJUpuFS/J9X+QwxhuLy3H9OiXvUqCGw5jCmZzszPr+/CLeAVz9rCSmWgWoFYHpGOFZQfxe+TEFS9QUs8xoZkRL3JyyGg0KeGZf+txdiQBieTFQTYxnkrJfQouKXJ1NutMk06rhRx406bjD0IR5SaO5DajiOcXQ4YtRxo45DAIAAAwDalME/zQiJcAAAAABJRU5ErkJggg==');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    &:after {
+      display: block;
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      content: '';
+      width: 39px;
+      height: 32px;
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAgCAYAAACRpmGNAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAdFJREFUeNpi/P//P8NgBUwMgxiMOm5YOo4Fn+Tni9NimG7PbyHGoL9mE8z45KxfIYt9enRUjPlUwSly9bMQoU+ewgCQH01zo44bddyo44aB4x6SKUd+DfFfUH/XP9XEWBif8d15d8a3F2KwqUUv3WFin98n1sD1f3+hxPhkeyNVHAe2UM56CVJ1xoDLcbgAr37WEpTqDLvjHlIcrSCfYw1hPuVLROn/fNcEb0BQ5LgXB8Owm6x2hqgE/mBFNSmeI9pxX3ZFbGL4840HW5T8E7NZRVD/ibo6hu+vpbHp/y9ut4rkNAdLJ0w3Js9h/HRXD2sLg1P0KZ+S2w2cza5nF9kYb06ZC0yrtrhaKMjpkqDjPt9cZ874/gIwZ55xZ4b4Flez5+FfzYJkrB56tjOD4dMtEyZcnoKFuioiNxMXcp/vWBCR5R/+UwjtxxZqjN9fKhKj/7+wwWFcoYbbcbwqJwgVqv80c7N4teO2YdevfB6qDmeI/ZfxnMdj0dREejmH3XCwo4gxlFdK/9dXHJ4ChdY/5YRibEUHUY4DGf4FaAiQeRhsoJDhzv+8KmfwJXx0AIpyxs+3TWD6GTgkbvOqB50kqega7fGPOm7UcUPEcQABBgA98rndYGz/lgAAAABJRU5ErkJggg==');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
