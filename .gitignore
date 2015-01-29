@@ -28,3 +28,4 @@ wp/wp-signup.php
 wp/wp-trackback.php
 wp/xmlrpc.php
 wp/.htaccess
+backup-snapshot/
