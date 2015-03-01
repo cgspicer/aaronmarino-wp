@@ -42,5 +42,17 @@ gulp.task('webserver', function() {
     }));
 });
 
+gulp.task('alphamcss', function() {
+  gulp.src('./scss/alphamfaves.scss')
+  .pipe(compass({
+    css: 'css',
+    sass: 'scss',
+    image: './images',
+    relative: true
+  }))
+  .pipe(minifyCSS())
+  .pipe(gulp.dest('alpham-faves-css'));
+});
+
 
 gulp.task('default', ['watch','compass']);

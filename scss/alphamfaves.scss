@@ -1,0 +1,61 @@
+// Make sure the charset is set appropriately
+
+@charset "UTF-8";
+
+//@import "compass/reset";
+@import "partials/fonts";
+@import "partials/mediaqueries";
+@import "partials/mixins";
+@import "partials/grid";
+@import "partials/colors";
+
+@import "compass/css3/transform";
+@import "compass/css3/transition";
+
+#alpham-favorites {
+  padding: 10px;
+}
+
+.favorite-tile {
+  text-align:center;
+  background-color: rgba( 0,0,0,.1);
+  border: 1px solid lightgray;
+  h4.title {
+    margin: .75em 0;
+  }
+  a.shop-now-button {
+    display: block;
+    padding: 10px 20px;
+    background-color: $gold;
+    color: $black;
+    font-size: 1.5em;
+    @include transition( all .3s );
+    &:hover {
+      text-decoration: none;
+      background-color: darken( $gold, 10 );
+    }
+  }
+  .thumb {
+    display: block;
+    img {
+      height: 230px;
+    }
+  }
+  .coupon-code {
+    font-weight: 700;
+    span {
+      color: $gold;
+    }
+  }
+}
+
+.amazon-tile {
+  text-align:center;
+}
+
+// mobile styles
+@media #{$small-only} {
+  .favorite-tile, .amazon-tile {
+    margin-bottom: 15px;
+  }
+}
